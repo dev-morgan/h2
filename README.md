@@ -1,4 +1,4 @@
-# spring-h2-db-sample
+# spring-boot-h2-sample
 
 new version issue tracking
 
