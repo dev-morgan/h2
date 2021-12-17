@@ -1,6 +1,6 @@
-# spring-boot-h2-sample
+# h2
 
-new version issue tracking
+for issue tracking
 
 ## h2 changelog 
 http://www.h2database.com/html/changelog.html
