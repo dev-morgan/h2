@@ -1,5 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import org.springframework.boot.gradle.tasks.bundling.BootJar as BootJar
+import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 plugins {
     val kotlinVersion = "1.6.10"
@@ -26,8 +26,10 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 
-    testImplementation("com.h2database:h2:2.0.202")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("com.h2database:h2:2.0.202")
+    testImplementation("io.kotest:kotest-runner-junit5:4.6.3")
+    testImplementation("io.kotest:kotest-extensions-spring:4.4.3")
 }
 
 tasks.withType<KotlinCompile> {
