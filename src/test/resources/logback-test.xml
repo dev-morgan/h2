@@ -4,7 +4,7 @@
         <withJansi>true</withJansi>
         <encoder>
             <charset>UTF-8</charset>
-            <pattern>%highlight(%-5level) %cyan(%logger{31}.%M\(%line\)) - %msg%n</pattern>
+            <pattern>%highlight(%-5level) %cyan(%logger{15}.%M\(%line\)) - %msg%n</pattern>
         </encoder>
     </appender>
 
