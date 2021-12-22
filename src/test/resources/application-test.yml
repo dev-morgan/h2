@@ -1,0 +1,19 @@
+spring:
+  main:
+    banner-mode: off
+  test:
+    database:
+      replace: NONE
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_ON_EXIT=FALSE;MODE=MYSQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE
+    driver-class-name: org.h2.Driver
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        physical_naming_strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
