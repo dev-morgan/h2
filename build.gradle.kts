@@ -23,7 +23,7 @@ repositories {
     mavenCentral()
 }
 
-var h2Version = "h2:2.0.206"
+val h2Version = "h2:2.0.206"
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 
