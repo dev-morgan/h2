@@ -4,11 +4,14 @@ import javax.persistence.*
 
 @Entity
 @Table(name = "users")
-class User {
+class User(
+    username: String
+) {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long = 0
 
-    @Column
-    var username: String? = null
+    @Column(nullable = false)
+    var username: String = username
+        private set
 }

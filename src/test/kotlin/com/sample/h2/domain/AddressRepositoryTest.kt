@@ -8,8 +8,8 @@ import org.springframework.test.context.ActiveProfiles
 
 @DataJpaTest
 @ActiveProfiles("test")
-class UserRepositoryTest(
-    val sut: UserRepository
+class AddressRepositoryTest(
+    val sut: AddressRepository
 ) : StringSpec() {
     override fun extensions() = listOf(SpringExtension)
 
