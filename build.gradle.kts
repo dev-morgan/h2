@@ -29,7 +29,7 @@ dependencies {
 
     testImplementation("com.h2database:h2:2.1.212")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("io.kotest:kotest-runner-junit5:5.2.2")
+    testImplementation("io.kotest:kotest-runner-junit5:5.4.0")
     testImplementation("io.kotest.extensions:kotest-extensions-spring:1.1.0")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
 }
